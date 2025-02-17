@@ -1,0 +1,25 @@
+body {
+    background: url("images/mmit-logo.jpg") no-repeat center center fixed;
+    background-size: contain; /* Ensures the image is fully visible */
+    font-family: Arial, sans-serif;
+    color: white; /* Text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Categorization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Student Data</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="file">Select Excel File:</label>
+            <input type="file" name="file" required><br>
+
+            <label for="outstanding">Minimum Marks for Outstanding:</label>
+            <input type="number" name="outstanding" required><br>
+
+            <label for="good">Minimum Marks for Good:</label>
+            <input type="number" name="good" required><br>
+
+            <button type="submit">Upload & Categorize</button>
+        </form>
+    </div>
+</body>
+</html>
